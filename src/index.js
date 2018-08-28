@@ -6,7 +6,7 @@ import rootReducer from './reducers'
 import App from './App';
 import 'semantic-ui-css/semantic.min.css';
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, window.devToolsExtension && window.devToolsExtension());
 
 ReactDOM.render(
   <Provider store={store}><App /></Provider>

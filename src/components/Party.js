@@ -1,74 +1,43 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import {Container, Segment, Grid} from 'semantic-ui-react';
 import Demon from './Demon';
-import { Grid } from 'semantic-ui-react';
 
-const Party = () => (
-  <Grid>
-    <Grid.Row>
-      <Grid.Column width={4}>
-        <Demon index="1" />
-      </Grid.Column>
-      <Grid.Column width={4}>
-        <Demon index="2" />
-      </Grid.Column>
-      <Grid.Column width={4}>
-        <Demon index="3" />
-      </Grid.Column>
-      <Grid.Column width={4}>
-        <Demon index="4" />
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
-)
+const Party = ({demons, updateAgility, updateBonus, toggleSpeedster}) => (
+  <Segment>
+    <Container>
+      <Grid columns={4} doubling>
+        <Grid.Row>
+          {demons.map(demon =>
+            <Grid.Column
+              key={demon.id}
+            >
+              <Demon
+                {...demon}
+                onAgChange={(e) => updateAgility(demon.id, e.target.value)}
+                onBonusChange={(e) => updateBonus(demon.id, e.target.value)}
+                onToggle={() => toggleSpeedster(demon.id)}
+              />
+            </Grid.Column>
+          )}
+        </Grid.Row>
+      </Grid>
+    </Container>
+  </Segment>
+);
 
-// class Party extends React.Component {
-//   state = {
-//     party: [
-//       {
-//         demonIndex: 1,
-//         agStat: 0,
-//         speedster: false,
-//         brandBonus: 0
-//       },
-//       {
-//         demonIndex: 2,
-//         agStat: 0,
-//         speedster: false,
-//         brandBonus: 0
-//       },
-//       {
-//         demonIndex: 3,
-//         agStat: 0,
-//         speedster: false,
-//         brandBonus: 0
-//       },
-//       {
-//         demonIndex: 4,
-//         agStat: 0,
-//         speedster: false,
-//         brandBonus: 0
-//       }
-//     ]
-//   };
-//
-//   onAgChange = () => {
-//     console.log('AG Changed')
-//   }
-//
-//   render() {
-//     const { party } = this.state;
-//     return (
-//       <Grid>
-//         <Grid.Row>
-//           {party.map(demon => (
-//             <Grid.Column width={4}>
-//               <Demon />
-//             </Grid.Column>
-//           ))}
-//         </Grid.Row>
-//       </Grid>
-//     );
-//   }
-// }
+Party.propTypes = {
+  demons: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      agility: PropTypes.number,
+      bonus: PropTypes.number,
+      speedster: PropTypes.bool
+    })
+  ),
+  onAgChange: PropTypes.func.isRequired,
+  onBonusChange: PropTypes.func.isRequired,
+  onToggle: PropTypes.func.isRequired
+}
 
 export default Party;
