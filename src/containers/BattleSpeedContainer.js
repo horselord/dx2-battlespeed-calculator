@@ -27,26 +27,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(BattleSpeed);
-
-// calcTotal = () => {
-//   const { demon1, demon2, demon3, demon4 } = this.state;
-//
-//   const getDemonSpeed = demonX => {
-//     if (demonX.speedster) {
-//       return Math.floor(demonX.agility * (1.5 + demonX.bonus / 100));
-//     } else {
-//       return Math.floor(demonX.agility * (1 + demonX.bonus / 100));
-//     }
-//   };
-//
-//   const d1s = getDemonSpeed(demon1);
-//   const d2s = getDemonSpeed(demon2);
-//   const d3s = getDemonSpeed(demon3);
-//   const d4s = getDemonSpeed(demon4);
-//
-//   const totalBS = Math.floor((d1s + d2s + d3s + d4s) * (100 / 4));
-//
-//   this.setState({
-//     battleSpeed: totalBS
-//   });
-// };

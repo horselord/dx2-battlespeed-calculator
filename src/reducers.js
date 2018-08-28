@@ -34,5 +34,4 @@ const demons = (state = initialState, action) => {
   }
 };
 
-
 export default combineReducers({ demons });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Form, Header } from 'semantic-ui-react';
+import { Segment, Form, Header } from 'semantic-ui-react';
 
 const Demon = ({ id, agility, bonus, speedster, onAgChange, onBonusChange, onToggle }) => (
   <Segment>
