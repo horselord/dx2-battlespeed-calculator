@@ -6,7 +6,7 @@ import Demon from './Demon';
 const Party = ({demons, updateAgility, updateBonus, toggleSpeedster}) => (
   // <Segment  secondary inverted style={{background: 'linear-gradient(45deg, #216a78, #184653)'}}>
     <Container>
-      <Grid columns={4} doubling>
+      <Grid columns={4} doubling stackable>
         <Grid.Row>
           {demons.map(demon =>
             <Grid.Column

@@ -9,16 +9,19 @@ const App = () => (
   <div
     style={{
       background: 'linear-gradient(to bottom, #c8445c, #6138c7)',
-      height: '100vh'
+      height: '100%',
+      minHeight: '100vh'
     }}
   >
     <Banner />
     <Container>
-      <Segment style={{background: 'linear-gradient(45deg, #216a78, #184653)'}} textAlign="center">
-      <PartyContainer />
-    </Segment>
-    <BattleSpeedContainer />
-    <Footer />
+      <Segment
+        style={{ background: 'linear-gradient(45deg, #216a78, #184653)' }}
+      >
+        <PartyContainer />
+      </Segment>
+      <BattleSpeedContainer />
+      <Footer />
     </Container>
   </div>
 );

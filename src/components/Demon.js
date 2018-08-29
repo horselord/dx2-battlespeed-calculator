@@ -23,7 +23,6 @@ const Demon = ({ id, agility, bonus, speedster, onAgChange, onBonusChange, onTog
         label="Demon Has Speedster"
         value={speedster}
         name="speedster"
-        toggle
         onChange={onToggle}
       />
     </Form>

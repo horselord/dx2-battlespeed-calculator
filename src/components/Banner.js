@@ -1,5 +1,5 @@
 import React from 'react';
-import {Segment, Header, Image} from 'semantic-ui-react';
+import { Segment, Header, Image } from 'semantic-ui-react';
 import logo from '../dx2-icon.jpg';
 
 const Banner = () => (
