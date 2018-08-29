@@ -4,7 +4,7 @@ import {Container, Segment, Grid} from 'semantic-ui-react';
 import Demon from './Demon';
 
 const Party = ({demons, updateAgility, updateBonus, toggleSpeedster}) => (
-  <Segment>
+  // <Segment  secondary inverted style={{background: 'linear-gradient(45deg, #216a78, #184653)'}}>
     <Container>
       <Grid columns={4} doubling>
         <Grid.Row>
@@ -23,7 +23,7 @@ const Party = ({demons, updateAgility, updateBonus, toggleSpeedster}) => (
         </Grid.Row>
       </Grid>
     </Container>
-  </Segment>
+  // </Segment>
 );
 
 Party.propTypes = {
