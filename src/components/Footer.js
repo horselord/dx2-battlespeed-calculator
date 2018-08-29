@@ -1,5 +1,6 @@
 import React from 'react';
 import { Segment, Image } from 'semantic-ui-react';
+import Instructions from './Instructions';
 import blackFrost from '../blackfrost.png';
 
 const Footer = () => (
@@ -8,6 +9,7 @@ const Footer = () => (
     size="mini"
     style={{ background: 'transparent', padding: '1rem', marginTop: '8rem' }}
   >
+    <Instructions />
     <Image
       src={blackFrost}
       size="mini"
