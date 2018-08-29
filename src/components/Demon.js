@@ -1,8 +1,16 @@
 import React from 'react';
 import { Segment, Form, Header } from 'semantic-ui-react';
 
-const Demon = ({ id, agility, bonus, speedster, onAgChange, onBonusChange, onToggle }) => (
-  <Segment style={{background: 'linear-gradient(45deg, #fcc700, #fee202'}} >
+const Demon = ({
+  id,
+  agility,
+  bonus,
+  speedster,
+  onAgChange,
+  onBonusChange,
+  onToggle
+}) => (
+  <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}>
     <Header>Demon {id}</Header>
     <Form>
       <Form.Input
