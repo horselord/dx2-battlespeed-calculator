@@ -1,6 +1,5 @@
 import React from 'react';
-import { Segment, Form, Header, Divider, Dropdown } from 'semantic-ui-react';
-
+import { Segment, Form, Header, Divider, Dropdown, Label } from 'semantic-ui-react';
 
 const Demon = ({
   id,
@@ -11,39 +10,39 @@ const Demon = ({
   onBonusChange,
   onToggle,
   demonOptions,
-  onSelectChange,
+  onSelectChange
 }) => (
   <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}>
-    <Header size="tiny" as="h6">Slot {id}</Header>
+    <Divider horizontal>Pick a Demon</Divider>
     <Form>
-      <Dropdown
+      <Form.Dropdown
         fluid
-        label="Demon (Optional)"
-        placeholder="Pick A Demon"
+        label="Fill with 6★ Max Stats"
+        placeholder={`Demon ${id}`}
         selection
         lazyLoad
         closeOnChange
         search
         options={demonOptions}
-        onChange={(e, {value}) => onSelectChange({value})}
+        onChange={(e, { value }) => onSelectChange({ value })}
       />
-      <Divider horizontal>customize stats</Divider>
+      <Divider horizontal>Customize Stats</Divider>
       <Form.Group widths={2}>
-      <Form.Input
-        label="Agility"
-        value={agility}
-        onChange={onAgChange}
-        name="agility"
-        placeholder={`Demon ${id} Agility`}
-      />
-      <Form.Input
-        label="Brand Speed %"
-        value={bonus}
-        onChange={onBonusChange}
-        name="bonus"
-        placeholder={`Demon ${id} Brand Speed %`}
-      />
-    </Form.Group>
+        <Form.Input
+          label="Agility"
+          value={agility}
+          onChange={onAgChange}
+          name="agility"
+          placeholder={`Agility`}
+        />
+        <Form.Input
+          label="Brand Speed %"
+          value={bonus}
+          onChange={onBonusChange}
+          name="bonus"
+          placeholder={`Brand Speed %`}
+        />
+      </Form.Group>
       <Form.Checkbox
         label="Demon Has Speedster"
         checked={speedster}
