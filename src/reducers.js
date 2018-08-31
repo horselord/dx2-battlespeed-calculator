@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import compendium from './data/stats.json';
 
 const initialState = [
   { id: 1, agility: '', bonus: '', speedster: false },
@@ -26,6 +27,21 @@ const demons = (state = initialState, action) => {
         demon =>
           demon.id === action.id
             ? { ...demon, speedster: !demon.speedster }
+            : demon
+      );
+
+    case 'SELECT_COMPENDIUM_DEMON':
+      const refArray = compendium.filter(
+        d => d.name.toLowerCase() === action.cDemon.name.toLowerCase()
+      );
+      const refDemon = refArray[0];
+
+      console.log(refDemon);
+
+      return state.map(
+        demon =>
+          demon.id === action.id
+            ? { ...demon, agility: refDemon.agility }
             : demon
       );
 
