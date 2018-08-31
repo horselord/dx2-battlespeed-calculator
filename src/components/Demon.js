@@ -1,5 +1,6 @@
 import React from 'react';
-import { Segment, Form, Header } from 'semantic-ui-react';
+import { Segment, Form, Header, Dropdown } from 'semantic-ui-react';
+
 
 const Demon = ({
   id,
@@ -8,11 +9,20 @@ const Demon = ({
   speedster,
   onAgChange,
   onBonusChange,
-  onToggle
+  onToggle,
+  demonOptions,
+  onSelectChange,
 }) => (
   <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}>
     <Header>Demon {id}</Header>
     <Form>
+      <Dropdown
+        fluid
+        selection
+        closeOnChange
+        options={demonOptions}
+        onChange={(e, {value}) => onSelectChange({value})}
+      />
       <Form.Input
         label="Agility Stat"
         value={agility}
@@ -29,7 +39,7 @@ const Demon = ({
       />
       <Form.Checkbox
         label="Demon Has Speedster"
-        value={speedster}
+        checked={speedster}
         name="speedster"
         onChange={onToggle}
       />
