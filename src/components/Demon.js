@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Form, Header, Dropdown, Divider } from 'semantic-ui-react';
+import { Segment, Form, Header, Divider, Dropdown } from 'semantic-ui-react';
 
 
 const Demon = ({
@@ -16,12 +16,14 @@ const Demon = ({
   <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}>
     <Header size="tiny" as="h6">Slot {id}</Header>
     <Form>
-      <Form.Dropdown
+      <Dropdown
         fluid
         label="Demon (Optional)"
         placeholder="Pick A Demon"
         selection
+        lazyLoad
         closeOnChange
+        search
         options={demonOptions}
         onChange={(e, {value}) => onSelectChange({value})}
       />
