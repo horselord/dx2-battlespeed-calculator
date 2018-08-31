@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 
 const MenuItem = ({ name, race, grade }) => (
   <Grid columns={2}>

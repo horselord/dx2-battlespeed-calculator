@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Form, Header, Divider, Dropdown, Label } from 'semantic-ui-react';
+import { Segment, Form, Divider } from 'semantic-ui-react';
 
 const Demon = ({
   id,
