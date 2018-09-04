@@ -22,6 +22,7 @@ const Demon = ({
         selection
         lazyLoad
         closeOnChange
+        selectOnNavigation={false}
         search
         options={demonOptions}
         onChange={(e, { value }) => onSelectChange({ value })}
@@ -40,11 +41,12 @@ const Demon = ({
           value={bonus}
           onChange={onBonusChange}
           name="bonus"
-          placeholder={`Brand Speed %`}
+          placeholder={`Speed %`}
         />
       </Form.Group>
       <Form.Checkbox
         label="Demon Has Speedster"
+        toggle
         checked={speedster}
         name="speedster"
         onChange={onToggle}
