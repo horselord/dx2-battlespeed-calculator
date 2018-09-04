@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,14 +20,56 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Dx2 Battle Speed Calculator - Shin Megami Tensei Dx2 Liberation</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
+  <title>Dx2 Battle Speed Calculator - Shin Megami Tensei Dx2 Liberation</title>
+</head>
+
+<body>
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+  </style>
+  <noscript>
+      <style>
+        .flex {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .noscript {
+          background: linear-gradient(to bottom, #c8445c, #6138c7);
+          height: 100%;
+          min-height: 100vh;
+        }
+        .blackfrost {
+          width: 300px;
+          height: 300px;
+        }
+        p, h1, h2 {
+          font-family: sans-serif;
+          color: #fff;
+        }
+        .hidden {
+          display: none;
+        }
+      </style>
+      <div class="noscript">
+        <img src="site-preview.png" class="hidden" />
+      <div class="flex">
+        <h1>Dx2 BattleSpeed Calculator</h1>
+        <a href="https://horselord.github.io/dx2-battlespeed-calculator">
+          <img src="blackfrost.png" height="300" width="300" alt="Hee Ho!"/>
+      </a>
+      <h2>Hee Ho! JavaScript is Required!</h2>
+      <br />
+      <p>JavaScript must be enabled for the Dx2 Battle Speed Calculator to function. Please enable JavaScript in your browser, and refresh this window.</p>
+    </div>
+  </div>
     </noscript>
-    <div id="root"></div>
-    <!--
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -36,5 +79,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
