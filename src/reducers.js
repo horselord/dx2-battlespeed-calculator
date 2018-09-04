@@ -36,8 +36,6 @@ const demons = (state = initialState, action) => {
       );
       const refDemon = refArray[0];
 
-      console.log(refDemon);
-
       return state.map(
         demon =>
           demon.id === action.id
