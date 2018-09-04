@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Segment, Form, Divider } from 'semantic-ui-react';
 
 const Demon = ({
@@ -30,6 +31,7 @@ const Demon = ({
       <Divider horizontal>Customize Stats</Divider>
       <Form.Group widths={2}>
         <Form.Input
+          type="number"
           label="Agility"
           value={agility}
           onChange={onAgChange}
@@ -37,6 +39,7 @@ const Demon = ({
           placeholder={`Agility`}
         />
         <Form.Input
+          type="number"
           label="Brand Speed %"
           value={bonus}
           onChange={onBonusChange}
@@ -54,5 +57,17 @@ const Demon = ({
     </Form>
   </Segment>
 );
+
+Demon.propTypes = {
+  id: PropTypes.number.isRequired,
+  agility: PropTypes.oneOfType([PropTypes.number,PropTypes.string]).isRequired,
+  bonus: PropTypes.oneOfType([PropTypes.number,PropTypes.string]).isRequired,
+  speedster: PropTypes.bool.isRequired,
+  onAgChange: PropTypes.func.isRequired,
+  onBonusChange: PropTypes.func.isRequired,
+  onToggle: PropTypes.func.isRequired,
+  demonOptions: PropTypes.array.isRequired,
+  onSelectChange: PropTypes.func.isRequired
+}
 
 export default Demon;

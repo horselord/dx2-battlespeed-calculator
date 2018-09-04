@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid } from 'semantic-ui-react';
 
 const MenuItem = ({ name, race, grade }) => (
@@ -16,5 +17,11 @@ const MenuItem = ({ name, race, grade }) => (
     </Grid.Row>
   </Grid>
 );
+
+MenuItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  race: PropTypes.string.isRequired,
+  grade: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+}
 
 export default MenuItem;

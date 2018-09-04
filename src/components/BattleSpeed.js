@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Segment, Statistic } from 'semantic-ui-react';
 
 const BattleSpeed = ({ battleSpeed }) => (
@@ -9,5 +10,9 @@ const BattleSpeed = ({ battleSpeed }) => (
     </Statistic>
   </Segment>
 );
+
+BattleSpeed.propTypes = {
+  battleSpeed: PropTypes.number.isRequired
+}
 
 export default BattleSpeed;
