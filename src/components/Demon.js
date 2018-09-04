@@ -19,7 +19,7 @@ const Demon = ({
       <Form.Dropdown
         fluid
         label="Fill with 6★ Max Stats"
-        placeholder={`Demon ${id}`}
+        placeholder="(Optional) Pick a Demon"
         selection
         lazyLoad
         closeOnChange

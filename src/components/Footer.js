@@ -14,10 +14,10 @@ const Footer = () => (
   <Segment
     vertical
     size="mini"
-    style={{ background: 'transparent', padding: '1rem', marginTop: '8rem' }}
+    style={{ background: 'transparent', padding: '1rem', marginTop: '2rem' }}
   >
     <Instructions />
-    <Modal trigger={<Image src={blackFrost} size="mini" floated="right" />}>
+    <Modal trigger={<Image src={blackFrost} size="mini" floated="right" />} closeIcon>
       <Modal.Content>
         <Modal.Description>
           <Header>
@@ -40,7 +40,7 @@ const Footer = () => (
             skill.
           </p>
           <Divider />
-          <Header sub>Planned Features for Future Updates</Header>
+          <Header sub>Planned Features</Header>
           <List as="ul">
             <List.Item as="li">
               Dx2 Leader Integration - Calculate more exactly based on Leader Ag
@@ -53,6 +53,27 @@ const Footer = () => (
               Agility stat lookups for 5★ MAX as well as 6★ MAX
             </List.Item>
           </List>
+          <Divider />
+          <Header sub>Credits</Header>
+          <p>
+            App created by{' '}
+            <a
+              href="https://github.com/horselord"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              horselord
+            </a>. Find me in-game, as <strong>HORSE</strong>!
+            <br />
+            6★ Agility stats from{' '}
+            <a
+              href="https://dx2wiki.com/index.php/Demon_List"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dx2 Wiki
+            </a>
+          </p>
         </Modal.Description>
       </Modal.Content>
     </Modal>

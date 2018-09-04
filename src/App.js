@@ -3,7 +3,7 @@ import Banner from './components/Banner';
 import PartyContainer from './containers/PartyContainer';
 import BattleSpeedContainer from './containers/BattleSpeedContainer';
 import Footer from './components/Footer';
-import { Container, Segment } from 'semantic-ui-react';
+import { Container, Segment, Divider } from 'semantic-ui-react';
 
 const App = () => (
   <div
@@ -21,6 +21,7 @@ const App = () => (
         <PartyContainer />
       </Segment>
       <BattleSpeedContainer />
+      <Divider />
       <Footer />
     </Container>
   </div>
