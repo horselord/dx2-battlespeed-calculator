@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux';
-import compendium from './data/stats.json';
+import { combineReducers } from "redux";
+import compendium from "./data/stats.json";
 
 const initialState = [
   { id: 1, agility: 0, bonus: 0, speedster: false },
@@ -10,19 +10,19 @@ const initialState = [
 
 const demons = (state = initialState, action) => {
   switch (action.type) {
-    case 'UPDATE_AGILITY':
+    case "UPDATE_AGILITY":
       return state.map(
         demon =>
           demon.id === action.id ? { ...demon, agility: action.value } : demon
       );
 
-    case 'UPDATE_BONUS':
+    case "UPDATE_BONUS":
       return state.map(
         demon =>
           demon.id === action.id ? { ...demon, bonus: action.value } : demon
       );
 
-    case 'TOGGLE_SPEEDSTER':
+    case "TOGGLE_SPEEDSTER":
       return state.map(
         demon =>
           demon.id === action.id
@@ -30,7 +30,7 @@ const demons = (state = initialState, action) => {
             : demon
       );
 
-    case 'SELECT_COMPENDIUM_DEMON':
+    case "SELECT_COMPENDIUM_DEMON":
       const refArray = compendium.filter(
         d => d.name.toLowerCase() === action.cDemon.name.toLowerCase()
       );
@@ -48,4 +48,16 @@ const demons = (state = initialState, action) => {
   }
 };
 
-export default combineReducers({ demons });
+const agBonus = (state = 0, action) => {
+  switch (action.type) {
+    case "SET_AG_BONUS":
+      return action.value >= 0
+        ? action.value
+        : 0
+
+    default:
+      return state;
+  }
+};
+
+export default combineReducers({ demons, agBonus });

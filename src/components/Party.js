@@ -1,9 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Container, Grid } from 'semantic-ui-react';
-import Demon from './Demon';
+import React from "react";
+import PropTypes from "prop-types";
+import { Container, Grid } from "semantic-ui-react";
+import Demon from "./Demon";
+import Dx2Leader from "./Dx2Leader";
 
-const Party = ({ demons, updateAgility, updateBonus, toggleSpeedster, onSelectChange, demonOptions}) => (
+const Party = ({
+  demons,
+  updateAgility,
+  updateBonus,
+  toggleSpeedster,
+  onSelectChange,
+  demonOptions,
+  agBonus,
+  onAgBonusChange
+}) => (
   <Container>
     <Grid columns={4} doubling stackable>
       <Grid.Row>
@@ -14,13 +24,19 @@ const Party = ({ demons, updateAgility, updateBonus, toggleSpeedster, onSelectCh
               onAgChange={e => updateAgility(demon.id, e.target.value)}
               onBonusChange={e => updateBonus(demon.id, e.target.value)}
               onToggle={() => toggleSpeedster(demon.id)}
-              onSelectChange={
-                (e) => onSelectChange(demon.id, {name: e.value})
-              }
+              onSelectChange={e => onSelectChange(demon.id, { name: e.value })}
               demonOptions={demonOptions}
             />
           </Grid.Column>
         ))}
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Column>
+        <Dx2Leader
+          agBonus={agBonus}
+          onChange={e => onAgBonusChange(e.target.value)}
+        />
+      </Grid.Column>
       </Grid.Row>
     </Grid>
   </Container>
@@ -32,7 +48,7 @@ Party.propTypes = {
   updateBonus: PropTypes.func.isRequired,
   toggleSpeedster: PropTypes.func.isRequired,
   onSelectChange: PropTypes.func.isRequired,
-  demonOptions: PropTypes.array.isRequired,
-}
+  demonOptions: PropTypes.array.isRequired
+};
 
 export default Party;

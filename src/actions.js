@@ -20,3 +20,8 @@ export const selectCompendiumDemon = (id, cDemon) => ({
   id,
   cDemon
 })
+
+export const setAgBonus = (value) => ({
+  type: 'SET_AG_BONUS',
+  value
+})

@@ -10,11 +10,11 @@ const Banner = () => (
     style={{ background: 'transparent' }}
     textAlign="center"
   >
-    <Image src={logo} inline size="tiny" />
+    <Image src={logo} inline size="mini" avatar />
     <Header size="huge" style={{ color: '#fef6d5' }}>
       Dx2 Battle Speed Calculator
     </Header>
-    <p style={{ color: '#fef6d5' }}>Shin Megami Tensei: Dx2 Liberation</p>
+    <Header sub style={{ color: '#fef6d5', marginTop: '0.1rem' }}>Shin Megami Tensei: Dx2 Liberation</Header>
   </Segment>
 );
 

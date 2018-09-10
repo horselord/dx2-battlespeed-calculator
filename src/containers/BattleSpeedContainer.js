@@ -22,8 +22,15 @@ const calcBattleSpeed = demons => {
   return Math.floor(totalSpeed(demons) * (100 / demonCount(demons)));
 };
 
+const leaderBonus = ag => 100*ag;
+
 const mapStateToProps = state => ({
-  battleSpeed: calcBattleSpeed(state.demons)
+  battleSpeed: calcBattleSpeed(state.demons) + leaderBonus(state.agBonus)
 });
 
 export default connect(mapStateToProps)(BattleSpeed);
+
+
+// ag bonus
+// x = ag bonus
+// final battle speed = calculated + (x * 100)

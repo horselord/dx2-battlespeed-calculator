@@ -13,9 +13,9 @@ const Demon = ({
   demonOptions,
   onSelectChange
 }) => (
-  <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}>
+  <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202)' }}>
     <Divider horizontal>Pick a Demon</Divider>
-    <Form>
+    <Form size="mini">
       <Form.Dropdown
         fluid
         label="Fill with 6★ Max Stats"
