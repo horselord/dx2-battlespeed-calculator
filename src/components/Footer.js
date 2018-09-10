@@ -9,6 +9,7 @@ import {
 } from 'semantic-ui-react';
 import Instructions from './Instructions';
 import blackFrost from '../blackfrost.png';
+import {version} from '../constants';
 
 const Footer = () => (
   <Segment
@@ -21,7 +22,7 @@ const Footer = () => (
       <Modal.Content>
         <Modal.Description>
           <Header>
-            Dx2 Battle Speed Calculator v.0.1.0
+            Dx2 Battle Speed Calculator {version}
             <Header.Subheader>
               A tool for Shin Megami Tensei Dx2 Liberation.
             </Header.Subheader>
@@ -40,12 +41,14 @@ const Footer = () => (
             skill.
           </p>
           <Divider />
-          <Header sub>Planned Features</Header>
+          <Header sub>New in v.0.1.1</Header>
           <List as="ul">
             <List.Item as="li">
-              Dx2 Leader Integration - Calculate more exactly based on Leader Ag
-              boosts
+              Calculate the (hidden, not displayed in-game) battle speed when using a Dx2 leader with an Agility bonus. (Experimental)
             </List.Item>
+          </List>
+          <Header sub>Planned Features</Header>
+          <List as="ul">
             <List.Item as="li">
               Hell's Park 5-demon team compatibility
             </List.Item>
@@ -78,7 +81,7 @@ const Footer = () => (
       </Modal.Content>
     </Modal>
     <p style={{ color: '#fef6d5', textAlign: 'right' }}>
-      Dx2 Battle Speed Calculator v.0.1.0<br />by{' '}
+      Dx2 Battle Speed Calculator {version}<br />by{' '}
       <a
         style={{ color: '#fee202' }}
         href="https://github.com/horselord"

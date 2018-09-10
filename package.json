@@ -1,6 +1,6 @@
 {
   "name": "dx2-battlespeed-calculator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://horselord.github.io/dx2-battlespeed-calculator/",
   "dependencies": {
