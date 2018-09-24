@@ -3,6 +3,7 @@ import Banner from './components/Banner';
 import PartyContainer from './containers/PartyContainer';
 import BattleSpeedContainer from './containers/BattleSpeedContainer';
 import Footer from './components/Footer';
+import WelcomeMessage from './components/WelcomeMessage';
 import { Container, Segment, Divider } from 'semantic-ui-react';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
       minHeight: '100vh'
     }}
   >
+    <WelcomeMessage />
     <Banner />
     <Container>
       <Segment
