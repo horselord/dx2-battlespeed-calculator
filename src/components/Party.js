@@ -32,11 +32,11 @@ const Party = ({
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
-        <Dx2Leader
-          agBonus={agBonus}
-          onChange={e => onAgBonusChange(e.target.value)}
-        />
-      </Grid.Column>
+          <Dx2Leader
+            agBonus={agBonus}
+            onChange={e => onAgBonusChange(e.target.value)}
+          />
+        </Grid.Column>
       </Grid.Row>
     </Grid>
   </Container>

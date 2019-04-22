@@ -11,23 +11,20 @@ const initialState = [
 const demons = (state = initialState, action) => {
   switch (action.type) {
     case "UPDATE_AGILITY":
-      return state.map(
-        demon =>
-          demon.id === action.id ? { ...demon, agility: action.value } : demon
+      return state.map(demon =>
+        demon.id === action.id ? { ...demon, agility: action.value } : demon
       );
 
     case "UPDATE_BONUS":
-      return state.map(
-        demon =>
-          demon.id === action.id ? { ...demon, bonus: action.value } : demon
+      return state.map(demon =>
+        demon.id === action.id ? { ...demon, bonus: action.value } : demon
       );
 
     case "TOGGLE_SPEEDSTER":
-      return state.map(
-        demon =>
-          demon.id === action.id
-            ? { ...demon, speedster: !demon.speedster }
-            : demon
+      return state.map(demon =>
+        demon.id === action.id
+          ? { ...demon, speedster: !demon.speedster }
+          : demon
       );
 
     case "SELECT_COMPENDIUM_DEMON":
@@ -36,11 +33,8 @@ const demons = (state = initialState, action) => {
       );
       const refDemon = refArray[0];
 
-      return state.map(
-        demon =>
-          demon.id === action.id
-            ? { ...demon, agility: refDemon.agility }
-            : demon
+      return state.map(demon =>
+        demon.id === action.id ? { ...demon, agility: refDemon.agility } : demon
       );
 
     default:
@@ -51,9 +45,7 @@ const demons = (state = initialState, action) => {
 const agBonus = (state = 0, action) => {
   switch (action.type) {
     case "SET_AG_BONUS":
-      return action.value >= 0
-        ? action.value
-        : 0
+      return action.value >= 0 ? action.value : 0;
 
     default:
       return state;

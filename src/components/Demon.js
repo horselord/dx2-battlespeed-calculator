@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Segment, Form, Divider } from 'semantic-ui-react';
+import React from "react";
+import PropTypes from "prop-types";
+import { Segment, Form, Divider } from "semantic-ui-react";
 
 const Demon = ({
   id,
@@ -13,7 +13,7 @@ const Demon = ({
   demonOptions,
   onSelectChange
 }) => (
-  <Segment style={{ background: 'linear-gradient(45deg, #fcc700, #fee202)' }}>
+  <Segment style={{ background: "linear-gradient(45deg, #fcc700, #fee202)" }}>
     <Divider horizontal>Pick a Demon</Divider>
     <Form size="mini">
       <Form.Dropdown
@@ -60,14 +60,14 @@ const Demon = ({
 
 Demon.propTypes = {
   id: PropTypes.number.isRequired,
-  agility: PropTypes.oneOfType([PropTypes.number,PropTypes.string]).isRequired,
-  bonus: PropTypes.oneOfType([PropTypes.number,PropTypes.string]).isRequired,
+  agility: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  bonus: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   speedster: PropTypes.bool.isRequired,
   onAgChange: PropTypes.func.isRequired,
   onBonusChange: PropTypes.func.isRequired,
   onToggle: PropTypes.func.isRequired,
   demonOptions: PropTypes.array.isRequired,
   onSelectChange: PropTypes.func.isRequired
-}
+};
 
 export default Demon;

@@ -1,5 +1,5 @@
-import { connect } from 'react-redux';
-import BattleSpeed from '../components/BattleSpeed';
+import { connect } from "react-redux";
+import BattleSpeed from "../components/BattleSpeed";
 
 const getDemonSpeed = demon => {
   if (demon.speedster) {
@@ -22,14 +22,13 @@ const calcBattleSpeed = demons => {
   return Math.floor(totalSpeed(demons) * (100 / demonCount(demons)));
 };
 
-const leaderBonus = ag => 100*ag;
+const leaderBonus = ag => 100 * ag;
 
 const mapStateToProps = state => ({
   battleSpeed: calcBattleSpeed(state.demons) + leaderBonus(state.agBonus)
 });
 
 export default connect(mapStateToProps)(BattleSpeed);
-
 
 // ag bonus
 // x = ag bonus

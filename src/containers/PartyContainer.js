@@ -1,23 +1,21 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 import {
   updateAgility,
   updateBonus,
   toggleSpeedster,
   selectCompendiumDemon,
   setAgBonus
-} from '../actions';
-import Party from '../components/Party';
-import MenuItem from '../components/MenuItem';
-import compendium from '../data/stats.json';
+} from "../actions";
+import Party from "../components/Party";
+import MenuItem from "../components/MenuItem";
+import compendium from "../data/stats.json";
 
 const mapStateToProps = (state, ownProps) => ({
   demons: state.demons,
   demonOptions: compendium.map(c => ({
     ...c,
-    content: (
-      <MenuItem race={c.race} name={c.name} grade={c.grade} />
-    ),
+    content: <MenuItem race={c.race} name={c.name} grade={c.grade} />,
     text: c.name,
     value: c.name,
     key: c.name
@@ -30,7 +28,7 @@ const mapDispatchToProps = dispatch => ({
   updateBonus: (id, value) => dispatch(updateBonus(id, value)),
   toggleSpeedster: id => dispatch(toggleSpeedster(id)),
   onSelectChange: (id, cDemon) => dispatch(selectCompendiumDemon(id, cDemon)),
-  onAgBonusChange: (value) => dispatch(setAgBonus(value))
+  onAgBonusChange: value => dispatch(setAgBonus(value))
 });
 
 export default connect(

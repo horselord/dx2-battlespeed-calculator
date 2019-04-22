@@ -1,25 +1,25 @@
-import React from 'react';
-import { Button, Modal, List, Segment } from 'semantic-ui-react';
+import React from "react";
+import { Button, Modal, List, Segment } from "semantic-ui-react";
 
 const Instructions = () => (
   <Modal
     trigger={
-      <Button compact floated="left"  basic color="yellow" inverted>
+      <Button compact floated="left" basic color="yellow" inverted>
         Need Help?
       </Button>
     }
     as={Segment}
     size="large"
-    style={{backgroundColor: 'transparent'}}
+    style={{ backgroundColor: "transparent" }}
     closeIcon
   >
     <Modal.Header
-      style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}
+      style={{ background: "linear-gradient(45deg, #fcc700, #fee202" }}
     >
       How to Use the Battle Speed Calculator
     </Modal.Header>
     <Modal.Content
-      style={{ background: 'linear-gradient(45deg, #fcc700, #fee202' }}
+      style={{ background: "linear-gradient(45deg, #fcc700, #fee202" }}
     >
       <Modal.Description>
         <List ordered>
@@ -32,10 +32,10 @@ const Instructions = () => (
             to add 15% if they're equipped with a 2-set of Speed Brands!
           </List.Item>
           <List.Item>
-            If the demon has the{' '}
+            If the demon has the{" "}
             <em>
               <strong>Speedster</strong>
-            </em>{' '}
+            </em>{" "}
             skill, check the Speedster checkbox to calculate the 50% bonus
             effect.
           </List.Item>
