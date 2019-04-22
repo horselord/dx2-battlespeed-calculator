@@ -61,12 +61,12 @@ const Footer = () => (
           <p>
             App created by{' '}
             <a
-              href="https://github.com/horselord"
+              href="https://github.com/czamp"
               target="_blank"
               rel="noopener noreferrer"
             >
-              horselord
-            </a>. Find me in-game, as <strong>HORSE</strong>!
+              clay
+            </a>
             <br />
             6★ Agility stats from{' '}
             <a
@@ -84,11 +84,11 @@ const Footer = () => (
       Dx2 Battle Speed Calculator {version}<br />by{' '}
       <a
         style={{ color: '#fee202' }}
-        href="https://github.com/horselord"
+        href="https://github.com/czamp"
         target="_blank"
         rel="noopener noreferrer"
       >
-        horselord
+        czamp
       </a>
     </p>
   </Segment>
