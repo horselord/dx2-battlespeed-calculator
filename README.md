@@ -1,5 +1,7 @@
 # [dx2-battlespeed-calculator](https://github.com/czamp/dx2-battlespeed-calculator)
 
+#### v.0.1.2
+
 This app is a tool used to help players of SEGA's [Shin Megami Tensei Dx2 Liberation](https://d2-megaten-l.sega.com/en/) mobile game build in-game teams.
 
 The app calculates the "Battle Speed" statistic—which determines which team goes first in battle—of any 1-4 unit team in the game.
@@ -21,8 +23,28 @@ For each character you plan on using in a team:
 
  Team Battle Speed is displayed below. Although this may differ slightly from the in-game display of battle speed for the same team, **the calculation displayed in this app is correct**. The in-game calculation does not take *Speedster* or *Dx2 Leader Bonuses* into account. As such, in-game battlespeed is not calculated until the player has left the team screen, and started the battle.
 
- #### About
+### Installation
 
- Stats from [Dx2 Wiki](http://dx2wiki.com/index.php/Main_Page).
+If you want to run this locally, modify the app, add new characters that are not in the version hosted at [https://czamp.github.io/dx2-battlespeed-calculator](https://czamp.github.io/dx2-battlespeed-calculator):
 
- Built with [React](https://github.com/facebook/react), [Redux](https://github.com/reduxjs/redux), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI).
+Clone the repository
+
+`git clone https://github.com/czamp/dx2-battlespeed-calculator && cd dx2-battlespeed-calculator`
+
+Install dependencies
+
+`npm` or `yarn`
+
+Run/Develop Locally
+
+`npm run start` or `yarn start`
+
+Build the app
+
+`yarn build`
+
+### About
+
+Stats from [Dx2 Wiki](http://dx2wiki.com/index.php/Main_Page).
+
+Built with [React](https://github.com/facebook/react), [Redux](https://github.com/reduxjs/redux), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI).
