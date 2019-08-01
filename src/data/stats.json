@@ -12,6 +12,12 @@
     "agility": 152
   },
   {
+    "name": "Masakado",
+    "race": "General",
+    "grade": 98,
+    "agility": 118
+  },
+  {
     "name": "Vishnu",
     "race": "Deity",
     "grade": 97,
@@ -22,6 +28,12 @@
     "race": "Hero",
     "grade": 97,
     "agility": 163
+  },
+  {
+    "name": "Mother Harlot",
+    "race": "Fiend",
+    "grade": 95,
+    "agility": 128
   },
   {
     "name": "Trumpeter",
@@ -36,10 +48,22 @@
     "agility": 160
   },
   {
-    "name": "Michael",
-    "race": "Herald",
+    "name": "Shiva A",
+    "race": "Fury",
+    "grade": 93,
+    "agility": 160
+  },
+  {
+    "name": "Mot",
+    "race": "Reaper",
+    "grade": 91,
+    "agility": 138
+  },
+  {
+    "name": "Dante☆",
+    "race": "Fiend",
     "grade": 90,
-    "agility": 158
+    "agility": 126
   },
   {
     "name": "Mara",
@@ -48,10 +72,34 @@
     "agility": 136
   },
   {
+    "name": "Michael",
+    "race": "Herald",
+    "grade": 90,
+    "agility": 158
+  },
+  {
+    "name": "Nero☆",
+    "race": "Fiend",
+    "grade": 90,
+    "agility": 169
+  },
+  {
+    "name": "V☆",
+    "race": "??",
+    "grade": 90,
+    "agility": 158
+  },
+  {
     "name": "Alice",
     "race": "Fiend",
     "grade": 89,
     "agility": 147
+  },
+  {
+    "name": "Izanami",
+    "race": "Megami",
+    "grade": 89,
+    "agility": 126
   },
   {
     "name": "Huang Di",
@@ -66,10 +114,46 @@
     "agility": 192
   },
   {
+    "name": "Indrajit",
+    "race": "Tenma",
+    "grade": 88,
+    "agility": 168
+  },
+  {
+    "name": "Rama",
+    "race": "Hero",
+    "grade": 86,
+    "agility": 145
+  },
+  {
     "name": "Alilat",
     "race": "Entity",
     "grade": 85,
     "agility": 145
+  },
+  {
+    "name": "Bayonetta☆",
+    "race": "Witch",
+    "grade": 85,
+    "agility": 156
+  },
+  {
+    "name": "Cybele",
+    "race": "Lady",
+    "grade": 85,
+    "agility": 145
+  },
+  {
+    "name": "Guan Yu",
+    "race": "Hero",
+    "grade": 85,
+    "agility": 123
+  },
+  {
+    "name": "Jeanne☆",
+    "race": "Witch",
+    "grade": 85,
+    "agility": 156
   },
   {
     "name": "Lakshmi",
@@ -90,6 +174,12 @@
     "agility": 178
   },
   {
+    "name": "Ixtab",
+    "race": "Reaper",
+    "grade": 84,
+    "agility": 154
+  },
+  {
     "name": "Samael",
     "race": "Fallen",
     "grade": 84,
@@ -100,6 +190,12 @@
     "race": "Vile",
     "grade": 84,
     "agility": 134
+  },
+  {
+    "name": "Yama",
+    "race": "Tenma",
+    "grade": 84,
+    "agility": 154
   },
   {
     "name": "Mastema",
@@ -156,10 +252,34 @@
     "agility": 92
   },
   {
+    "name": "Black Frost",
+    "race": "Jaki",
+    "grade": 81,
+    "agility": 153
+  },
+  {
     "name": "Cu Chulainn",
     "race": "Genma",
     "grade": 81,
     "agility": 111
+  },
+  {
+    "name": "Daisoujou",
+    "race": "Fiend",
+    "grade": 81,
+    "agility": 164
+  },
+  {
+    "name": "Nergal",
+    "race": "Reaper",
+    "grade": 81,
+    "agility": 164
+  },
+  {
+    "name": "Asura",
+    "race": "Tenma",
+    "grade": 80,
+    "agility": 163
   },
   {
     "name": "Garuda",
@@ -168,10 +288,28 @@
     "agility": 256
   },
   {
+    "name": "Gogmagog",
+    "race": "Jirae",
+    "grade": 80,
+    "agility": 62
+  },
+  {
+    "name": "Kartikeya",
+    "race": "Fury",
+    "grade": 80,
+    "agility": 256
+  },
+  {
     "name": "Lilith",
     "race": "Night",
     "grade": 80,
     "agility": 121
+  },
+  {
+    "name": "Orcus",
+    "race": "Reaper",
+    "grade": 80,
+    "agility": 92
   },
   {
     "name": "Quetzalcoatl",
@@ -216,10 +354,22 @@
     "agility": 120
   },
   {
+    "name": "Hecatoncheires",
+    "race": "Jaki",
+    "grade": 74,
+    "agility": 61
+  },
+  {
     "name": "White Rider",
     "race": "Fiend",
     "grade": 74,
     "agility": 159
+  },
+  {
+    "name": "Matador",
+    "race": "Fiend",
+    "grade": 73,
+    "agility": 237
   },
   {
     "name": "Odin",
@@ -228,16 +378,46 @@
     "agility": 128
   },
   {
+    "name": "Persephone",
+    "race": "Reaper",
+    "grade": 72,
+    "agility": 158
+  },
+  {
     "name": "Anubis",
     "race": "Avatar",
     "grade": 70,
     "agility": 78
   },
   {
+    "name": "Beloved",
+    "race": "Divine",
+    "grade": 70,
+    "agility": 106
+  },
+  {
     "name": "Dantalian",
     "race": "Fallen",
     "grade": 70,
     "agility": 127
+  },
+  {
+    "name": "Dante",
+    "race": "Fiend",
+    "grade": 70,
+    "agility": 117
+  },
+  {
+    "name": "Nero",
+    "race": "Fiend",
+    "grade": 70,
+    "agility": 157
+  },
+  {
+    "name": "V",
+    "race": "??",
+    "grade": 70,
+    "agility": 147
   },
   {
     "name": "Bishamonten",
@@ -324,6 +504,12 @@
     "agility": 126
   },
   {
+    "name": "Kudlak",
+    "race": "Jaki",
+    "grade": 67,
+    "agility": 146
+  },
+  {
     "name": "Yatagarasu",
     "race": "Avian",
     "grade": 66,
@@ -336,16 +522,64 @@
     "agility": 96
   },
   {
+    "name": "Tlaltecuhtli",
+    "race": "Jirae",
+    "grade": 66,
+    "agility": 105
+  },
+  {
     "name": "Attis",
     "race": "Zealot",
     "grade": 65,
     "agility": 145
   },
   {
+    "name": "Bayonetta",
+    "race": "Witch",
+    "grade": 65,
+    "agility": 145
+  },
+  {
+    "name": "Halloween Jack",
+    "race": "Fairy",
+    "grade": 65,
+    "agility": 124
+  },
+  {
+    "name": "Jeanne",
+    "race": "Witch",
+    "grade": 65,
+    "agility": 145
+  },
+  {
+    "name": "Mishaguji",
+    "race": "Vile",
+    "grade": 65,
+    "agility": 183
+  },
+  {
+    "name": "Chernobog",
+    "race": "Reaper",
+    "grade": 64,
+    "agility": 144
+  },
+  {
+    "name": "Dionysus",
+    "race": "Zealot",
+    "grade": 64,
+    "agility": 134
+  },
+  {
     "name": "King Frost",
     "race": "Tyrant",
     "grade": 64,
     "agility": 76
+  },
+  {
+    "name": "Helper Frost",
+    "race": "Fairy",
+    "grade": 64,
+    "agility": 105
   },
   {
     "name": "Succubus",
@@ -420,6 +654,12 @@
     "agility": 238
   },
   {
+    "name": "Rakshasa",
+    "race": "Jaki",
+    "grade": 61,
+    "agility": 164
+  },
+  {
     "name": "Throne",
     "race": "Divine",
     "grade": 60,
@@ -442,6 +682,42 @@
     "race": "Tyrant",
     "grade": 60,
     "agility": 122
+  },
+  {
+    "name": "Abaddon A",
+    "race": "Tyrant",
+    "grade": 60,
+    "agility": 66
+  },
+  {
+    "name": "Hel",
+    "race": "Reaper",
+    "grade": 60,
+    "agility": 141
+  },
+  {
+    "name": "Man Eater",
+    "race": "Undead",
+    "grade": 60,
+    "agility": 132
+  },
+  {
+    "name": "Nekomata A",
+    "race": "Beast",
+    "grade": 60,
+    "agility": 226
+  },
+  {
+    "name": "Parvati",
+    "race": "Megami",
+    "grade": 60,
+    "agility": 152
+  },
+  {
+    "name": "Titan",
+    "race": "Jirae",
+    "grade": 60,
+    "agility": 104
   },
   {
     "name": "Mitra",
@@ -502,6 +778,12 @@
     "race": "Yoma",
     "grade": 52,
     "agility": 128
+  },
+  {
+    "name": "Grendel",
+    "race": "Jaki",
+    "grade": 51,
+    "agility": 63
   },
   {
     "name": "Koumokuten",
@@ -588,6 +870,12 @@
     "agility": 117
   },
   {
+    "name": "Kwancha",
+    "race": "Jirae",
+    "grade": 46,
+    "agility": 135
+  },
+  {
     "name": "Peallaidh",
     "race": "Wilder",
     "grade": 46,
@@ -646,6 +934,12 @@
     "race": "Herald",
     "grade": 43,
     "agility": 107
+  },
+  {
+    "name": "Reiko Kashima",
+    "race": "Rumor",
+    "grade": 42,
+    "agility": 142
   },
   {
     "name": "Silky",
@@ -720,6 +1014,18 @@
     "agility": 133
   },
   {
+    "name": "Bodyconian",
+    "race": "Undead",
+    "grade": 40,
+    "agility": 142
+  },
+  {
+    "name": "Hua Po",
+    "race": "Jirae",
+    "grade": 40,
+    "agility": 172
+  },
+  {
     "name": "Power",
     "race": "Divine",
     "grade": 40,
@@ -742,6 +1048,12 @@
     "race": "Yoma",
     "grade": 40,
     "agility": 115
+  },
+  {
+    "name": "Saki Mitama",
+    "race": "Mitama",
+    "grade": 36,
+    "agility": 111
   },
   {
     "name": "Orthrus",
@@ -798,6 +1110,12 @@
     "agility": 159
   },
   {
+    "name": "Kusi Mitama",
+    "race": "Mitama",
+    "grade": 31,
+    "agility": 144
+  },
+  {
     "name": "Kanbari",
     "race": "Enigma",
     "grade": 30,
@@ -810,7 +1128,13 @@
     "agility": 78
   },
   {
-    "name": "Sparna",
+    "name": "Nadja",
+    "race": "Fairy",
+    "grade": 30,
+    "agility": 148
+  },
+  {
+    "name": "Suparna",
     "race": "Avian",
     "grade": 28,
     "agility": 176
@@ -850,6 +1174,18 @@
     "race": "Megami",
     "grade": 27,
     "agility": 167
+  },
+  {
+    "name": "Ippon-Datara",
+    "race": "Jaki",
+    "grade": 26,
+    "agility": 110
+  },
+  {
+    "name": "Nigi Mitama",
+    "race": "Mitama",
+    "grade": 26,
+    "agility": 102
   },
   {
     "name": "Pisaca",
@@ -912,6 +1248,18 @@
     "agility": 155
   },
   {
+    "name": "Kodama",
+    "race": "Jirae",
+    "grade": 22,
+    "agility": 164
+  },
+  {
+    "name": "Ara Mitama",
+    "race": "Mitama",
+    "grade": 21,
+    "agility": 122
+  },
+  {
     "name": "Incubus",
     "race": "Night",
     "grade": 21,
@@ -928,6 +1276,12 @@
     "race": "Foul",
     "grade": 20,
     "agility": 83
+  },
+  {
+    "name": "Kabuso",
+    "race": "Beast",
+    "grade": 20,
+    "agility": 145
   },
   {
     "name": "Mou-Ryo",
@@ -972,6 +1326,12 @@
     "agility": 116
   },
   {
+    "name": "Koropokkur",
+    "race": "Jirae",
+    "grade": 12,
+    "agility": 150
+  },
+  {
     "name": "Leanan Sidhe",
     "race": "Femme",
     "grade": 12,
@@ -982,6 +1342,12 @@
     "race": "Yoma",
     "grade": 11,
     "agility": 115
+  },
+  {
+    "name": "Gremlin",
+    "race": "Jaki",
+    "grade": 11,
+    "agility": 159
   },
   {
     "name": "Eligor",

@@ -44,32 +44,15 @@ const Footer = () => (
             skill.
           </p>
           <Divider />
-          <Header sub>New in v.0.1.1</Header>
-          <List as="ul">
-            <List.Item as="li">
-              Calculate the (hidden, not displayed in-game) battle speed when
-              using a Dx2 leader with an Agility bonus. (Experimental)
-            </List.Item>
-          </List>
-          <Header sub>Planned Features</Header>
-          <List as="ul">
-            <List.Item as="li">
-              Hell's Park 5-demon team compatibility
-            </List.Item>
-            <List.Item as="li">
-              Agility stat lookups for 5★ MAX as well as 6★ MAX
-            </List.Item>
-          </List>
-          <Divider />
           <Header sub>Credits</Header>
           <p>
             App created by{" "}
             <a
-              href="https://github.com/czamp"
+              href="https://github.com/horselord"
               target="_blank"
               rel="noopener noreferrer"
             >
-              clay
+              horselord
             </a>
             <br />
             6★ Agility stats from{" "}
@@ -90,11 +73,11 @@ const Footer = () => (
       by{" "}
       <a
         style={{ color: "#fee202" }}
-        href="https://github.com/czamp"
+        href="https://github.com/horselord"
         target="_blank"
         rel="noopener noreferrer"
       >
-        czamp
+        horselord
       </a>
     </p>
   </Segment>
